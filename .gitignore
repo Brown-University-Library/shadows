@@ -32,7 +32,6 @@ scalar/system/application/plugins
 scalar/system/application/rdf
 scalar/system/application/views/arbors
 scalar/system/application/views/index.html
-scalar/system/application/views/melons/cantaloupe/
 scalar/system/application/views/melons/cantaloupe/annotation_editor.php
 scalar/system/application/views/melons/cantaloupe/config.php
 scalar/system/application/views/melons/cantaloupe/criticalcommons.php
