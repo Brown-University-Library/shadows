@@ -1,19 +1,19 @@
 ### Other Books ###
-cb-test
-italian-shadows-november-2018
-italian-shadows-july-2019
-joe-test-book
-joe-test-book-2
-local-scalar-test
-shadows-copy
+scalar/cb-test
+scalar/italian-shadows-november-2018
+scalar/italian-shadows-july-2019
+scalar/joe-test-book
+scalar/joe-test-book-2
+scalar/local-scalar-test
+scalarshadows-copy
 
 ### Scalar Defaults ###
-codeigniter.php
-INSTALL.txt
-license.txt
-maintenance.html
-paperviews
-README.md
+scalar/codeigniter.php
+scalar/INSTALL.txt
+scalar/license.txt
+scalar/maintenance.html
+scalar/paperviews
+scalar/README.md
 system/application/arc
 system/application/cache
 system/application/config
