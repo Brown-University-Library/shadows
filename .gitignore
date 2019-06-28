@@ -5,7 +5,7 @@ scalar/italian-shadows-july-2019
 scalar/joe-test-book
 scalar/joe-test-book-2
 scalar/local-scalar-test
-scalarshadows-copy
+scalar/shadows-copy
 
 ### Scalar Defaults ###
 scalar/codeigniter.php
@@ -111,4 +111,4 @@ scalar/system/helpers
 scalar/system/index.html
 scalar/system/language
 scalar/system/libraries
-scalar/system/UPDATE.txt
+scalar/UPDATE.txt
