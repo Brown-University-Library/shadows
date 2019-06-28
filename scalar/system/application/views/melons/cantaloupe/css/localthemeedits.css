@@ -1,0 +1,179 @@
+/* type edits to match SR design */
+
+/* Adobe Caslon Pro fonts load from Adobe Fonts */
+@import url(//use.typekit.net/emu6cbb.css);
+.body_font {
+	font-family: 'adobe-caslon-pro', Georgia, serif !important;
+}
+
+/* Gabriela Stencil Bold is locally hosted */
+/* @import url("//hello.myfonts.net/count/3889cd"); */
+@font-face {
+	font-family: 'GabrielaStencil-Bold';
+	src: url('../fonts/3889CD_0_0.eot');
+	src: url('../fonts/3889CD_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/3889CD_0_0.woff2') format('woff2'),url('../fonts/3889CD_0_0.woff') format('woff'),url('../fonts/3889CD_0_0.ttf') format('truetype');
+}
+
+h1.heading_font {
+	font-family: GabrielaStencil-Bold !important;
+	font-weight: normal !important;
+	font-style: normal;
+	text-align: center;
+	font-size: 55pt;
+	line-height: 135%;
+	padding-top: 7%;
+}
+
+.caption_font { 
+	font-family: 'adobe-caslon-pro', Georgia, serif !important; 
+	font-size: 106%;
+}
+
+div.media_description.pane {
+	font-size: 1.75rem !important;
+}
+
+.path-breadcrumb {
+	font-family: 'adobe-caslon-pro', Georgia, serif !important;
+	font-weight: bold;
+	text-align: center;
+	font-size: 12.25pt;
+	letter-spacing: 2px;
+	margin-top: 40px;
+}
+
+.title_card {
+	width: 100% !important;
+	min-width: 99% !important;
+}
+
+.image_header .title_card {
+	min-height: 526px;
+}
+
+div.description {
+	font-family: 'adobe-caslon-pro', Georgia, serif !important;
+	font-size: 19.25pt;
+	font-style: normal !important;
+	text-align: center;
+	padding-top: 1.75em;
+}
+
+div.note_viewer {
+	background-color: #fff7ef;
+	line-height: 144%;
+}
+
+a.texteo_icon.texteo_icon_note {
+	font-size: 61% !important;
+  	vertical-align: baseline;
+  	position: relative;
+  	top: -0.4em;
+}
+
+a.media_link {
+ /* vertical-align: middle !important; */
+}
+
+/* a.noteLink {
+	display: none;
+} */
+
+div.slot {
+	background-color: white;
+	background-image: none;
+}
+
+div.widgetContainer.well.page_margins {
+	margin-left: auto !important;
+	margin-right: auto !important;
+	align-content: center !important;
+}
+
+div.slot.full.pillarbox {
+	background-color: #ADADAD !important;
+}
+
+/* use h3 for chapter section headings */
+h3.heading_font { 
+	font-family: GabrielaStencil-Bold !important;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 28.75pt;
+	border-top: 1px solid black;
+	padding-top: 30px;
+	border-bottom: 1px solid black;
+	padding-bottom: 30px;
+	margin-top: 80px;
+	margin-bottom: 40px;
+}
+
+/* use h4 for chapter sub-section headings */
+h4.heading_font {
+	font-family: 'adobe-caslon-pro', Georgia, serif !important;
+	font-weight: bold;
+	font-size: 135%;	
+}
+
+/* use h6 for blockquote credit line directly below blockquote text */
+h6.heading_font {
+	font-family: 'adobe-caslon-pro', Georgia, serif !important;
+	font-weight: normal;
+	font-size: 16.33pt;
+	margin-top: -1.2rem;
+	padding-top: 0;
+}
+
+div.media_description.pane.body_copy {
+	font-weight: bold;
+}
+
+
+/* sizing & misc. styling to match SR design */
+
+.bg_screen {
+	background-color: white !important;
+	background-image: none !important;
+}
+
+.page {
+/*	background-color: #fff; */
+	max-width: 137rem; /* = 104rem * (SR's 1366px ÷ default 1040px) */
+/*	margin: 5rem auto 0 auto;
+	padding: 0 0 7.8rem 0;
+	min-height: calc(100% - 4.8rem); */
+	line-height: 3.2rem;
+	font-size: 135%;
+/*	position: relative;
+	-webkit-transition: opacity .5s ease-in-out;
+	-moz-transition: opacity .5s ease-in-out;
+	-o-transition: opacity .5s ease-in-out;
+	transition: opacity .5s ease-in-out; */
+}
+
+div.body_copy {
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+
+div.slot.left.top {
+	margin-left: auto !important;
+	margin-right: auto !important;
+	padding-left: 33rem !important;
+}
+
+div.media_description.pane {
+	margin-bottom: 40px;
+	line-height: 160%;
+}
+
+blockquote {
+	font-family: 'adobe-caslon-pro', Georgia, serif !important;
+	font-style: italic;
+	font-weight: normal !important;
+	padding-left: 0rem;
+	padding-right: 0rem;
+	font-size: 22pt;
+	line-height: 135%;
+	border-left: none !important;
+}

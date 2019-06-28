@@ -1,0 +1,29 @@
+article.page {
+	background-color: orange;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	max-width: 100%;
+}
+
+article.page > header {
+
+}
+
+article.page > span {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: auto;
+
+}
+div.paragraph_wrapper {
+	grid-column: 1 / 7;
+}
+div.body_copy {
+	font-size: 1.5rem;
+	padding: 0 3rem;
+}
+div.body_copy iframe {
+	margin-left: -3rem;
+	width: 100vw;
+}
