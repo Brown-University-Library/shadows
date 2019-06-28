@@ -49,7 +49,7 @@ scalar/system/application/views/melons/cantaloupe/css/reset.css
 scalar/system/application/views/melons/cantaloupe/css/responsive.css
 scalar/system/application/views/melons/cantaloupe/css/scalarvis.css
 scalar/system/application/views/melons/cantaloupe/css/screen_print.css
-scalar/system/application/views/melons/cantaloupe/css/sidebar_viz.css
+scalar/system/application/views/melons/cantaloupe/css/sidebar_vis.css
 scalar/system/application/views/melons/cantaloupe/css/small.css
 scalar/system/application/views/melons/cantaloupe/css/timeline.min.css
 scalar/system/application/views/melons/cantaloupe/css/timeline.theme.dark.css
@@ -76,7 +76,7 @@ scalar/system/application/views/melons/cantaloupe/js/jquery.bootstrap-modal.js
 scalar/system/application/views/melons/cantaloupe/js/jquery.dotdotdot.min.js
 scalar/system/application/views/melons/cantaloupe/js/jquery.mobile.touch.min.js
 scalar/system/application/views/melons/cantaloupe/js/jquery.scrollTo.min.js
-scalar/system/application/views/melons/cantaloupe/js/jquery.tabbling.js
+scalar/system/application/views/melons/cantaloupe/js/jquery.tabbing.js
 scalar/system/application/views/melons/cantaloupe/js/scalarcomments.jquery.js
 scalar/system/application/views/melons/cantaloupe/js/scalareditorialpath.jquery.js
 scalar/system/application/views/melons/cantaloupe/js/scalarheader.jquery.js
@@ -84,6 +84,7 @@ scalar/system/application/views/melons/cantaloupe/js/scalarhelp.jquery.js
 scalar/system/application/views/melons/cantaloupe/js/scalarindex.jquery.js
 scalar/system/application/views/melons/cantaloupe/js/scalarmedia.jquery.js
 scalar/system/application/views/melons/cantaloupe/js/scalarmediadetails.jquery.js
+scalar/system/application/views/melons/cantaloupe/js/scalarpage.jquery.js
 scalar/system/application/views/melons/cantaloupe/js/scalarsearch.jquery.js
 scalar/system/application/views/melons/cantaloupe/js/scalarstructuredgallery.jquery.js
 scalar/system/application/views/melons/cantaloupe/js/scalarvisualizations.jquery.js
