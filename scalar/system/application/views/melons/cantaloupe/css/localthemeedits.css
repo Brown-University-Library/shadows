@@ -1,3 +1,4 @@
+/***** Typography *****/
 /* type edits to match SR design */
 
 /* Adobe Caslon Pro fonts load from Adobe Fonts */
@@ -13,7 +14,37 @@
 	src: url('../fonts/3889CD_0_0.eot');
 	src: url('../fonts/3889CD_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/3889CD_0_0.woff2') format('woff2'),url('../fonts/3889CD_0_0.woff') format('woff'),url('../fonts/3889CD_0_0.ttf') format('truetype');
 }
+/***** End Typography *****/
 
+
+/***** Global *****/
+body {
+	font-size: 16px;
+}
+
+ul, ol {
+	list-style-type: none;
+}
+
+.page {
+/*	background-color: #fff; */
+/*	max-width: 137rem;*/ /* = 104rem * (SR's 1366px ÷ default 1040px) */
+/*	margin: 5rem auto 0 auto;
+	padding: 0 0 7.8rem 0;
+	min-height: calc(100% - 4.8rem); */
+	font-size: 135%;
+	line-height: 3.2rem;
+/*	position: relative;
+	-webkit-transition: opacity .5s ease-in-out;
+	-moz-transition: opacity .5s ease-in-out;
+	-o-transition: opacity .5s ease-in-out;
+	transition: opacity .5s ease-in-out; */
+	max-width: 100%;
+}
+/***** End Global *****/
+
+
+/***** Headings *****/
 h1.heading_font {
 	font-family: GabrielaStencil-Bold !important;
 	font-weight: normal !important;
@@ -24,6 +55,39 @@ h1.heading_font {
 	padding-top: 7%;
 }
 
+/* use h3 for chapter section headings */
+h3.heading_font { 
+	font-family: GabrielaStencil-Bold !important;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 28.75pt;
+	border-top: 1px solid black;
+	padding-top: 30px;
+	border-bottom: 1px solid black;
+	padding-bottom: 30px;
+	margin-top: 80px;
+	margin-bottom: 40px;
+}
+
+/* use h4 for chapter sub-section headings */
+h4.heading_font {
+	font-family: 'adobe-caslon-pro', Georgia, serif !important;
+	font-weight: bold;
+	font-size: 135%;	
+}
+
+/* use h6 for blockquote credit line directly below blockquote text */
+h6.heading_font {
+	font-family: 'adobe-caslon-pro', Georgia, serif !important;
+	font-weight: normal;
+	font-size: 16.33pt;
+	margin-top: -1.2rem;
+	padding-top: 0;
+}
+/***** End Headings *****/
+
+
+/***** Hero / Header *****/
 .caption_font { 
 	font-family: 'adobe-caslon-pro', Georgia, serif !important; 
 	font-size: 106%;
@@ -41,10 +105,17 @@ div.media_description.pane {
 	letter-spacing: 2px;
 	margin-top: 40px;
 }
+.path-breadcrumb a:focus {
+	outline: 1px dotted #fff;
+}
 
 .title_card {
 	width: 100% !important;
 	min-width: 99% !important;
+}
+
+.image_header {
+	background-color: #4F4D4E;
 }
 
 .image_header .title_card {
@@ -58,7 +129,82 @@ div.description {
 	text-align: center;
 	padding-top: 1.75em;
 }
+/***** End Hero / Header *****/
 
+
+/***** Chapter Navigation *****/
+.chapter-nav {
+	background: #231F20;
+	color: #ADADAD;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	font-size: 1.5rem;
+	height: 6rem;
+	margin:-5rem 0 6rem 0;
+	padding: 0 4rem;
+	width: 100vw;
+}
+.chapter-nav__sections {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	height: 6rem;
+	margin: 0;
+}
+.chapter-nav__section {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;}
+.chapter-nav__section a {
+	box-sizing: border-box;
+	color: #ADADAD;
+	padding: .5rem;
+	text-decoration: none;
+}
+.chapter-nav__section a:hover {
+	color: #fff;
+	transition: color .2s;
+}
+.chapter-nav__section a:focus {
+	outline: 1px dotted #fff;
+}
+.chapter-nav__section span {
+	border-bottom: 1px solid #FCBD7A; 
+	color: #FCBD7A;
+	display: none;
+	font-style: oblique;
+}
+.chapter-nav__section.section--active span {
+	display: inline-block;
+}
+.chapter-nav__simulation {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	flex-basis: 70%;
+}
+a.simulation__title {
+	color: #FCBD7A;
+	font-style: oblique;
+	margin-left: 2rem;
+}
+a.simulation__title:hover {
+	color: #fff;
+	transition:color .2s;
+}
+a.simulation__title:focus {
+	color: #fff;
+	outline: 1px dotted #fff;
+}
+a.simulation__title em {
+	font-style: normal;
+}
+/***** End Chapter Navigation *****/
+
+
+/***** Body Copy *****/
 div.note_viewer {
 	background-color: #fff7ef;
 	line-height: 144%;
@@ -94,66 +240,22 @@ div.slot.full.pillarbox {
 	background-color: #ADADAD !important;
 }
 
-/* use h3 for chapter section headings */
-h3.heading_font { 
-	font-family: GabrielaStencil-Bold !important;
-	font-weight: normal;
-	font-style: normal;
-	font-size: 28.75pt;
-	border-top: 1px solid black;
-	padding-top: 30px;
-	border-bottom: 1px solid black;
-	padding-bottom: 30px;
-	margin-top: 80px;
-	margin-bottom: 40px;
-}
-
-/* use h4 for chapter sub-section headings */
-h4.heading_font {
-	font-family: 'adobe-caslon-pro', Georgia, serif !important;
-	font-weight: bold;
-	font-size: 135%;	
-}
-
-/* use h6 for blockquote credit line directly below blockquote text */
-h6.heading_font {
-	font-family: 'adobe-caslon-pro', Georgia, serif !important;
-	font-weight: normal;
-	font-size: 16.33pt;
-	margin-top: -1.2rem;
-	padding-top: 0;
-}
-
 div.media_description.pane.body_copy {
 	font-weight: bold;
 }
 
-
 /* sizing & misc. styling to match SR design */
-
 .bg_screen {
 	background-color: white !important;
 	background-image: none !important;
 }
 
-.page {
-/*	background-color: #fff; */
-	max-width: 137rem; /* = 104rem * (SR's 1366px ÷ default 1040px) */
-/*	margin: 5rem auto 0 auto;
-	padding: 0 0 7.8rem 0;
-	min-height: calc(100% - 4.8rem); */
-	line-height: 3.2rem;
-	font-size: 135%;
-/*	position: relative;
-	-webkit-transition: opacity .5s ease-in-out;
-	-moz-transition: opacity .5s ease-in-out;
-	-o-transition: opacity .5s ease-in-out;
-	transition: opacity .5s ease-in-out; */
-}
-
 div.body_copy {
-	margin-left: auto !important;
-	margin-right: auto !important;
+/*	margin-left: auto !important;
+	margin-right: auto !important;*/
+	margin: 0 !important;
+	padding: 0 !important;
+	max-width:100% !important;
 }
 
 div.slot.left.top {
@@ -177,3 +279,4 @@ blockquote {
 	line-height: 135%;
 	border-left: none !important;
 }
+/***** End Body Copy *****/
