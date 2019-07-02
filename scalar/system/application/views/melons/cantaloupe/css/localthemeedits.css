@@ -211,14 +211,16 @@ h6.heading_font {
 .toc__chapter__num a {
 	border-bottom: 1px solid #FCBD7A;
 	color: #FCBD7A;
-	font-size: 2.0625rem;
+	font-size: 25pt;
 	padding:0 1rem .5rem 1rem;
 	width:100%;
 }
-.toc__chapter__num a:hover {
+.toc__chapter__num a:hover, .toc__chapter__num a:focus {
 	border-bottom: 1px solid #fff;
 	color: #fff;
 	text-decoration: none;
+}
+.toc__chapter__num a:hover {
 	transition: border-bottom .2s, color .2s;
 }
 h3.toc__chapter__title {
@@ -226,26 +228,26 @@ h3.toc__chapter__title {
 	box-sizing: border-box;
 	font-family: 'GabrielaStencil-Bold' !important;
 	font-weight: normal !important;
-	font-size: 2.5rem !important;
-	line-height: 1.5;
+	font-size: 30pt !important;
+	line-height: 1.2;
 	margin: 0 !important;
-	padding: 1.5rem 0 !important;
+	padding: 1rem 7rem 1.5rem 7rem !important;
 	text-align: center;
-	width: 50%;
+	width: 100%;
 }
 h3.toc__chapter__title a {
 	color: #fff;
 }
 .toc__chapter__date {
 	color: #FCBD7A;
-	font-size: 1.0625rem;
+	font-size: 13pt;
 }
 .toc__chapter__sections {
 	margin: .5rem 0 8rem 0;
 	text-align: center;
 }
 .section__title {
-	font-size: 1.5rem;
+	font-size: 15pt;
 	margin-bottom: .125rem;
 }
 .section__title a {
@@ -271,7 +273,7 @@ h3.toc__chapter__title a {
 }
 #home__footer a {
 	color: #FCBD7A;
-	font-size: 1.5rem;
+	font-size: 13pt;
 	padding: 1rem 2rem;
 }
 #home__footer a:hover {
