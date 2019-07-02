@@ -258,6 +258,13 @@ div.body_copy {
 	max-width:100% !important;
 }
 
+.fake_body_copy {
+	max-width: 85.4rem; 
+	margin: 0 auto !important; 
+	padding: 0 7.2rem !important;
+	text-align: left;
+}
+
 div.slot.left.top {
 	margin-left: auto !important;
 	margin-right: auto !important;
