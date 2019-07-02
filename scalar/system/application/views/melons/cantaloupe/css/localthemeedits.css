@@ -223,6 +223,9 @@ h6.heading_font {
 .toc__chapter__num a:hover {
 	transition: border-bottom .2s, color .2s;
 }
+.toc__chapter__num a:focus {
+	outline: 1px dotted #fff;
+}
 h3.toc__chapter__title {
 	border: none;
 	box-sizing: border-box;
@@ -237,6 +240,9 @@ h3.toc__chapter__title {
 }
 h3.toc__chapter__title a {
 	color: #fff;
+}
+h3.toc__chapter__title a:focus {
+	outline: 1px dotted #fff;
 }
 .toc__chapter__date {
 	color: #FCBD7A;
@@ -255,6 +261,9 @@ h3.toc__chapter__title a {
 }
 .section__title a:hover {
 	color: #fff;
+}
+.section__title a:focus {
+	outline: 1px dotted #fff;
 }
 #home__footer {
 	background: #231F20;
@@ -278,6 +287,9 @@ h3.toc__chapter__title a {
 }
 #home__footer a:hover {
 	color: #fff;
+}
+#home__footer a:focus {
+	outline: 1px dotted #FCBD7A;
 }
 /***** End Landing Page / Table of Contents *****/
 
