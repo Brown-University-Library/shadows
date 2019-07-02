@@ -24,6 +24,7 @@ body {
 
 ul, ol {
 	list-style-type: none;
+	margin: 0;
 }
 
 .page {
@@ -85,6 +86,198 @@ h6.heading_font {
 	padding-top: 0;
 }
 /***** End Headings *****/
+
+
+/***** Landing Page / Table of Contents *****/
+#home__bkg {
+	height: auto;
+	min-height: 100%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	min-width: 100%;
+	width: 100%;
+}
+#home__toc {
+	background: url("http://206.189.70.30/scalar/italian-shadows-july-2019/media/toc_bkg.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #fff;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: auto;
+	height: auto;
+	min-height: 125vh;
+	margin: 0;
+	padding: 4rem;
+	position: relative;
+	top: 90vh;
+	right: 0;
+	left: 0;
+	width: auto;
+	min-width: 100%;
+}
+.toc__lead {
+	grid-column: 1 / 13;
+	line-height: 1.5;
+	text-align: center;
+}
+.toc__chapter {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-direction: column;
+	min-height: 60vh;
+}
+.chapter1, .chapter4 {
+	grid-column: 1 / 5;
+}
+.chapter2, .chapter5 {
+	grid-column: 5 / 9;
+}
+.chapter3, .chapter6 {
+	grid-column: 9 / 13;
+}
+.chapter6 {
+	margin-bottom: 2rem;
+}
+.toc__icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 1.5rem;
+	width: 100%
+}
+.toc__icon__wrapper {
+	background: transparent;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 16rem;
+	position: relative;
+	width: 16rem;
+}
+.toc__icon__wrapper:before {
+	background: transparent;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	content: "";
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	bottom: 8px;
+	left: 8px;
+}
+.toc__icon__bkg {
+	background: hsla(345, 6%, 4%, .6);
+	border-radius: 50%;
+	height: 14.25rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 14.25rem;
+}
+.toc__icon img {
+	height: auto;
+}
+.chapter1 img {
+	margin-top: 1rem;
+	width: 13rem;
+}
+.chapter2 img {
+	width: 8rem;
+}
+.chapter3 img {
+	width: 30rem;
+}
+.chapter4 img {
+	width: 11rem;
+}
+.chapter5 img {
+	width: 13rem;
+}
+.chapter6 img {
+	margin-top: .5rem;
+	width: 12rem;
+}
+.toc__chapter__num {
+	font-family: 'GabrielaStencil-Bold' !important;
+	font-weight: normal !important;
+	margin: 0 !important;
+}
+.toc__chapter__num a {
+	border-bottom: 1px solid #FCBD7A;
+	color: #FCBD7A;
+	font-size: 2.0625rem;
+	padding:0 1rem .5rem 1rem;
+	width:100%;
+}
+.toc__chapter__num a:hover {
+	border-bottom: 1px solid #fff;
+	color: #fff;
+	text-decoration: none;
+	transition: border-bottom .2s, color .2s;
+}
+h3.toc__chapter__title {
+	border: none;
+	box-sizing: border-box;
+	font-family: 'GabrielaStencil-Bold' !important;
+	font-weight: normal !important;
+	font-size: 2.5rem !important;
+	line-height: 1.5;
+	margin: 0 !important;
+	padding: 1.5rem 0 !important;
+	text-align: center;
+	width: 50%;
+}
+h3.toc__chapter__title a {
+	color: #fff;
+}
+.toc__chapter__date {
+	color: #FCBD7A;
+	font-size: 1.0625rem;
+}
+.toc__chapter__sections {
+	margin: .5rem 0 8rem 0;
+	text-align: center;
+}
+.section__title {
+	font-size: 1.5rem;
+	margin-bottom: .125rem;
+}
+.section__title a {
+	color: #fff;
+}
+.section__title a:hover {
+	color: #fff;
+}
+#home__footer {
+	background: #231F20;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	grid-column: 1 / 13;
+	height: 12rem;
+	margin: 0 -4rem -12rem -4rem;
+}
+#home__footer ul {
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+}
+#home__footer a {
+	color: #FCBD7A;
+	font-size: 1.5rem;
+	padding: 1rem 2rem;
+}
+#home__footer a:hover {
+	color: #fff;
+}
+/***** End Landing Page / Table of Contents *****/
 
 
 /***** Hero / Header *****/
