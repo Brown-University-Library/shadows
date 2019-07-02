@@ -57,24 +57,28 @@ h1.heading_font {
 }
 
 /* use h3 for chapter section headings */
-h3.heading_font { 
+h3.heading_font {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
 	font-family: GabrielaStencil-Bold !important;
 	font-weight: normal;
 	font-style: normal;
 	font-size: 28.75pt;
-	border-top: 1px solid black;
-	padding-top: 30px;
-	border-bottom: 1px solid black;
-	padding-bottom: 30px;
 	margin-top: 80px;
 	margin-bottom: 40px;
+	padding-top: 30px;
+	padding-right: 0;
+	padding-bottom: 30px;
+	padding-left: 0;
 }
 
 /* use h4 for chapter sub-section headings */
 h4.heading_font {
 	font-family: 'adobe-caslon-pro', Georgia, serif !important;
+	font-size: 135%;
 	font-weight: bold;
-	font-size: 135%;	
+	padding-right: 0;
+	padding-left: 0;
 }
 
 /* use h6 for blockquote credit line directly below blockquote text */
@@ -84,6 +88,9 @@ h6.heading_font {
 	font-size: 16.33pt;
 	margin-top: -1.2rem;
 	padding-top: 0;
+}
+h6.blockquote__attribution {
+	margin-bottom: 8rem;
 }
 /***** End Headings *****/
 
@@ -462,6 +469,7 @@ div.body_copy {
 	margin-right: auto !important;*/
 	margin: 0 !important;
 	padding: 0 !important;
+	text-align: center;
 	max-width:100% !important;
 }
 
@@ -494,3 +502,14 @@ blockquote {
 	border-left: none !important;
 }
 /***** End Body Copy *****/
+
+
+/***** Deep Dive *****/
+.deep-dive__navigation {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+/***** End Deep Dive *****/
+
+
