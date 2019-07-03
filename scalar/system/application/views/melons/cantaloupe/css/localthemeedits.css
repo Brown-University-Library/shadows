@@ -327,6 +327,14 @@ div.media_description.pane {
 	width: 100% !important;
 	min-width: 99% !important;
 }
+.title_card .chapter__title {
+	display: block;
+	font-size: 3rem;
+	margin-bottom:-2rem;
+}
+.title_card .description {
+	padding-left: 0;
+}
 
 .image_header {
 	background-color: #4F4D4E;
