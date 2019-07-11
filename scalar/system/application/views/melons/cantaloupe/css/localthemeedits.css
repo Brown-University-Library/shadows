@@ -27,6 +27,10 @@ ul, ol {
 	margin: 0;
 }
 
+cite {
+	font-style: oblique;
+}
+
 .page {
 /*	background-color: #fff; */
 /*	max-width: 137rem;*/ /* = 104rem * (SR's 1366px ÷ default 1040px) */
@@ -427,11 +431,14 @@ a.simulation__title em {
 
 
 /***** Footer Navigation *****/
-a.nav_btn.primary {
+.relationships {
+	margin-top: 10rem;
+}
+a.nav_btn, a.nav_btn.primary {
 	background-color: #3B6D44;
 	color: #fff;
 }
-a.nav_btn.primary:hover {
+a.nav_btn:hover, a.nav_btn.primary:hover {
 	background-color: #FCBD7A;
 	color: #231F20;
 	transition: .2s;
@@ -534,6 +541,7 @@ blockquote:not(.pullquote) {
 }
 /***** End Body Copy *****/
 
+
 /***** Footnotes *****/
 .note_viewer a {
 	color: #3B6D44;
@@ -546,6 +554,8 @@ blockquote:not(.pullquote) {
 a.texteo_icon.texteo_icon_note {
 	background-image: none !important;
 	color: #3B6D44;
+	font-family: 'adobe-caslon-pro', Georgia, serif !important;
+	font-style: normal;
 	font-weight: 800;
 	padding-left: 0;
 }
@@ -581,11 +591,14 @@ a.texteo_icon.texteo_icon_note {
 	justify-content: space-around;
 }
 a.further-insights {
-	color: #3B6D44;
-	text-decoration: underline;
+	background-color: #3B6D44;
+	color: #fff;
+	padding: 1.5rem;
 }
 a.further-insights:hover {
+	background-color: #FCBD7A;
 	color: #231F20;
+	text-decoration: none;
 	transition: .2s;
 }
 /***** End Deep Dive *****/
