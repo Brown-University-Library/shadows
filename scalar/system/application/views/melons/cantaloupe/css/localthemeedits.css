@@ -426,6 +426,19 @@ a.simulation__title em {
 /***** End Chapter Navigation *****/
 
 
+/***** Footer Navigation *****/
+a.nav_btn.primary {
+	background-color: #3B6D44;
+	color: #fff;
+}
+a.nav_btn.primary:hover {
+	background-color: #FCBD7A;
+	color: #231F20;
+	transition: .2s;
+}
+/***** End Footer Navigation *****/
+
+
 /***** Body Copy *****/
 div.note_viewer {
 	background-color: #fff7ef;
@@ -512,7 +525,7 @@ blockquote {
 
 blockquote:not(.pullquote) {
 	border-left: 1px solid #000 !important;
-	color: #231f20;
+	color: #584B4E;
 	font-size: 2.1rem;
 	font-style: normal;
 	line-height: 1.5;
@@ -521,12 +534,59 @@ blockquote:not(.pullquote) {
 }
 /***** End Body Copy *****/
 
+/***** Footnotes *****/
+.note_viewer a {
+	color: #3B6D44;
+	text-decoration: underline;
+}
+.note_viewer a:hover {
+	color: #000;
+	transition: .2s;
+}
+a.texteo_icon.texteo_icon_note {
+	background-image: none !important;
+	color: #3B6D44;
+	font-weight: 800;
+	padding-left: 0;
+}
+/***** End Footnotes *****/
+
+
+/***** Carousel Widget *****/
+.carousel-caption {
+	top: 0 !important;
+	right: 0 !important;
+	bottom: 0;
+	left: 0 !important;
+}
+/***** End Carousel Widget *****/
+
+
+/***** Embedded Simulations *****/
+.simulation {
+	margin-right: auto;
+	margin-left: auto;
+	width: 912px;
+}
+.simulation h4 {
+	text-align: left;
+}
+/****** End Embedded Simulations *****/
+
 
 /***** Deep Dive *****/
 .deep-dive__navigation {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
+}
+a.further-insights {
+	color: #3B6D44;
+	text-decoration: underline;
+}
+a.further-insights:hover {
+	color: #231F20;
+	transition: .2s;
 }
 /***** End Deep Dive *****/
 
