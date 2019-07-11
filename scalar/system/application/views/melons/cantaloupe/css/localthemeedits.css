@@ -358,6 +358,42 @@ div.description {
 /***** End Hero / Header *****/
 
 
+/***** Hamburger Menu *****/
+#mainMenuInside h2 {
+	font-family: 'adobe-caslon-pro', Georgia, serif !important;
+	font-size: 21pt !important;
+	font-style: normal !important;
+	font-weight: 800 !important;
+	margin-bottom: 1.2rem !important;
+	padding-left: 3.8rem !important;
+}
+#mainMenuSubmenus h2.title {
+	font-family: 'adobe-caslon-pro', Georgia, serif !important;
+	font-size: 16pt !important;
+	font-style: normal !important;
+	font-weight: 600 !important;
+	padding: 0 3.4rem !important;
+}
+#mainMenuSubmenus h2.title span {
+	display: inline-block;
+}
+.tocMenu .expandedPage .description {
+	display: inline-block;
+	padding: 0 3.4rem;
+}
+.tocMenu .expandedPage h2.title {
+	line-height: 1.2;
+	margin: 1.8rem 0 1rem 0;
+}
+.relationships ol {
+	text-align: left;
+}
+.relationships ol li a > span {
+	display: inline-block;
+}
+/***** End Hamburger Menu *****/
+
+
 /***** Chapter Navigation *****/
 .chapter-nav {
 	background: #231F20;
@@ -433,6 +469,15 @@ a.simulation__title em {
 /***** Footer Navigation *****/
 .relationships {
 	margin-top: 10rem;
+	max-width: 100% !important;
+}
+.relationships h1 {
+	font-size: 28pt;
+}
+.relationships ul {
+	padding-right: 7.2rem;
+	padding-left: 7.2rem;
+	text-align: center;
 }
 a.nav_btn, a.nav_btn.primary {
 	background-color: #3B6D44;
@@ -536,7 +581,7 @@ blockquote:not(.pullquote) {
 	font-size: 2.1rem;
 	font-style: normal;
 	line-height: 1.5;
-	margin: 5rem 0 5rem 10rem;
+	margin: 5rem 0 5rem 9rem;
 	padding-left: 1.5rem;
 }
 /***** End Body Copy *****/
@@ -551,12 +596,17 @@ blockquote:not(.pullquote) {
 	color: #000;
 	transition: .2s;
 }
+.note_viewer .fake_body_copy {
+	max-width: 100%;
+	padding: 2.5rem !important;
+}
 a.texteo_icon.texteo_icon_note {
 	background-image: none !important;
 	color: #3B6D44;
 	font-family: 'adobe-caslon-pro', Georgia, serif !important;
-	font-style: normal;
-	font-weight: 800;
+	font-size: 70% !important;
+	font-style: normal !important;
+	font-weight: 800 !important;
 	padding-left: 0;
 }
 /***** End Footnotes *****/
