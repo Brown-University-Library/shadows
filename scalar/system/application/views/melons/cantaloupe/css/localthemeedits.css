@@ -405,12 +405,13 @@ div.description {
 	height: 6rem;
 	margin:-5rem 0 6rem 0;
 	padding: 0 4rem;
-	width: 100vw;
+	width: 100%;
 }
 .chapter-nav__sections {
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
+	flex-basis: 55%;
 	height: 6rem;
 	margin: 0;
 }
@@ -445,7 +446,7 @@ div.description {
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
-	flex-basis: 70%;
+	flex-basis: 40%;
 }
 a.simulation__title {
 	color: #FCBD7A;
