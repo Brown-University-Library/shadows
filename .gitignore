@@ -6,6 +6,7 @@ scalar/joe-test-book
 scalar/joe-test-book-2
 scalar/local-scalar-test
 scalar/shadows-copy
+scalar/italian-shadows-demo
 
 ### Scalar Defaults ###
 scalar/codeigniter.php
@@ -92,6 +93,8 @@ scalar/system/application/views/melons/cantaloupe/js/scalarwidgets.jquery.js
 scalar/system/application/views/melons/cantaloupe/js/timeline.min.js
 scalar/system/application/views/melons/cantaloupe/js/tinysort.min.js
 scalar/system/application/views/melons/cantaloupe/js/vis.js
+scalar/system/application/views/melons/cantaloupe/js/vendors/gsap/TweenMax.min.js
+scalar/system/application/views/melons/cantaloupe/js/vendors/gsap/ScrollToPlugin.min.js
 scalar/system/application/views/melons/cantaloupe/meta.php
 scalar/system/application/views/melons/cantaloupe/resources.php
 scalar/system/application/views/melons/cantaloupe/tags.php
