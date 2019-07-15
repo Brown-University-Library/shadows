@@ -673,4 +673,6 @@ a.further-insights:hover {
 }
 /***** End Deep Dive *****/
 
-
+.text--centered {
+	text-align: center;
+}

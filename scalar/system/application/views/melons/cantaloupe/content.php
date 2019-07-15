@@ -13,6 +13,8 @@
 <?$this->template->add_js(path_from_file(__FILE__).'js/bootstrap.min.js');?>
 <?$this->template->add_js(path_from_file(__FILE__).'js/jquery.bootstrap-modal.js');?>
 <?$this->template->add_js(path_from_file(__FILE__).'js/jquery.bootstrap-accessibility.js');?>
+<?$this->template->add_js(path_from_file(__FILE__).'js/vendors/gsap/TweenMax.min.js');?>
+<?$this->template->add_js(path_from_file(__FILE__).'js/vendors/gsap/ScrollToPlugin.min.js');?>
 <?$this->template->add_js(path_from_file(__FILE__).'js/main.js')?>
 <?$this->template->add_js(path_from_file(__FILE__).'js/jquery.dotdotdot.min.js');?>
 <?$this->template->add_js(path_from_file(__FILE__).'js/jquery.scrollTo.min.js');?>
