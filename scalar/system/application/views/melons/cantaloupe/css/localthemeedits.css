@@ -518,6 +518,7 @@ a.texteo_icon.texteo_icon_note {
   	top: -0.4em;
 }
 
+
 a.media_link {
  /* vertical-align: middle !important; */
 }
@@ -626,6 +627,28 @@ a.texteo_icon.texteo_icon_note {
 	font-weight: 800 !important;
 	padding-left: 0;
 }
+a.footnote--scroll {
+	color: #3B6D44;
+	cursor: pointer;
+	font-family: 'adobe-caslon-pro', Georgia, serif !important;
+	font-size: 70% !important;
+	font-style: normal !important;
+	font-weight: 800 !important;
+	position: relative;
+	top: -0.4em;
+	vertical-align: baseline;
+}
+.footnotes {
+	text-align: left;
+}
+.paragraph_wrapper ul > li.footnote {
+	margin-left: 0;
+}
+.footnote a.footnote--scroll {
+	font-size: 100% !important;
+	margin-right: 1.5rem;
+	top: 0;
+}
 .relationships ul.has_reference a {
 	color: #3b6d44;
 }
@@ -654,7 +677,7 @@ a.texteo_icon.texteo_icon_note {
 /****** End Embedded Simulations *****/
 
 
-/***** Deep Dive *****/
+/***** Further Insights *****/
 .deep-dive__navigation {
 	display: flex;
 	align-items: center;
@@ -664,6 +687,8 @@ a.further-insights {
 	background-color: #3B6D44;
 	color: #fff;
 	padding: 1.5rem;
+	text-align: center;
+	width: 100%;
 }
 a.further-insights:hover {
 	background-color: #FCBD7A;
@@ -671,7 +696,10 @@ a.further-insights:hover {
 	text-decoration: none;
 	transition: .2s;
 }
-/***** End Deep Dive *****/
+.further-insights-wrapper {
+	display: flex;
+}
+/***** End Further Insights *****/
 
 .text--centered {
 	text-align: center;
