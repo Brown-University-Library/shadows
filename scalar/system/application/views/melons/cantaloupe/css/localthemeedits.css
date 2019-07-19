@@ -705,6 +705,61 @@ a.footnote--scroll {
 /***** End Footnotes *****/
 
 
+/***** Captions *****/
+
+.caption-wrapper {
+	border-bottom: 1px solid black;
+	color: #666;
+	font-family: 'adobe-caslon-pro', Georgia, serif;
+	font-size: 1.7rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.5;
+	padding: 0 0 2rem 0;
+}
+.caption {
+	display: inline-block;
+}
+button.caption__button {
+	background: none;
+	border-top: none;
+	border-right: 1px solid #231f20;
+	border-bottom: 1px solid #231f20;
+	border-left: 1px solid #231f20;
+	color: #231f20;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'adobe-caslon-pro', Georgia, serif;
+	font-size: 1.6rem;
+	font-style: normal;
+	font-weight: 600;
+	height: 4rem;
+	padding-top: .5rem;
+	position: relative;
+	left: 25%;
+	width: 50%;
+}
+button.caption__button:hover {
+	background: #3b6d44;
+	color: #fff;
+}
+button.caption__button:active {
+	outline: none;
+}
+button.caption__button:focus {
+	background: #3b6d44;
+	border-top: none;
+	border-right: 2px dotted #fff;
+	border-bottom: 2px dotted #fff;
+	border-left: 2px dotted #fff;
+	box-sizing: border-box;
+	color: #fff;
+	outline: none;
+}
+/***** End Captions *****/
+
+
 /***** Carousel Widget *****/
 .carousel-caption {
 	top: 0 !important;
