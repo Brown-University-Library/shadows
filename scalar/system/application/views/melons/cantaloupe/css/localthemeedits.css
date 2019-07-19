@@ -1,13 +1,14 @@
 /***** Color Palette *****/
 /*
-Yellow: #fcbd7a;
-Yellow Light: #fff7ef;
-Green: #3b6d44;
 Black: #231f20;
-Black Pure: #000000;
+Black, Pure: #000000;
 Gray: #adadad;
-Gray Medium: #584b4e;
+Gray, Medium: #584b4e;
+Green: #3b6d44;
+Green, Light: #d8f0b9;
 White: #ffffff;
+Yellow: #fcbd7a;
+Yellow, Light: #fff7ef;
 */
 /***** End Color Palette *****/
 
@@ -583,18 +584,17 @@ div.media_description.pane {
 }
 
 blockquote {
-	font-family: 'adobe-caslon-pro', Georgia, serif !important;
-	font-style: italic;
-	font-weight: normal !important;
+	font-family: 'adobe-caslon-pro', Georgia, serif;
+	font-style: oblique;
+	font-weight: normal;
 	padding-left: 0rem;
 	padding-right: 0rem;
 	font-size: 22pt;
 	line-height: 135%;
-	border-left: none !important;
+	border-left: none;
 }
-
 blockquote:not(.pullquote) {
-	border-left: 1px solid #000 !important;
+	border-left: 1px solid #000;
 	color: #584B4E;
 	font-size: 2.1rem;
 	font-style: normal;
@@ -602,7 +602,57 @@ blockquote:not(.pullquote) {
 	margin: 5rem 0 5rem 9rem;
 	padding-left: 1.5rem;
 }
+blockquote.translated {
+	border-left: none;
+	margin: 5rem 8rem;
+	padding-left: 0;
+}
 /***** End Body Copy *****/
+
+/***** Translation *****/
+.translation-wrapper {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 3rem 1rem 2rem 1rem;
+}
+button.translate {
+	background: none;
+	border-top: none;
+	border-right: 1px solid #231f20;
+	border-bottom: 1px solid #231f20;
+	border-left: 1px solid #231f20;
+	color: #231f20;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'adobe-caslon-pro', Georgia, serif !important;
+	font-size: 1.6rem;
+	font-style: normal;
+	font-weight: 600;
+	height: 4rem;
+	padding-top: .5rem;
+	position: relative;
+	left: 25%;
+	width: 50%;
+}
+button.translate:hover {
+	background: #3b6d44;
+	color: #fff;
+}
+button.translate:active {
+	outline: none;
+}
+button.translate:focus {
+	background: #3b6d44;
+	border-top: none;
+	border-right: 2px dotted #fff;
+	border-bottom: 2px dotted #fff;
+	border-left: 2px dotted #fff;
+	box-sizing: border-box;
+	color: #fff;
+	outline: none;
+}
+/***** End Translation *****/
 
 
 /***** Footnotes *****/
