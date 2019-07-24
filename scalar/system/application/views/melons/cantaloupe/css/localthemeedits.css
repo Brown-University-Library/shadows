@@ -415,10 +415,120 @@ h3.toc__chapter__title a:focus {
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {}
 @media screen and (min-width: 320px) and (max-width: 500px) {}
-@media screen and (min-width: 768px) and (max-width: 1024px) {}
-@media screen and (min-width: 1025px) and (max-width: 1350px) {}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	.chapter1, .chapter3, .chapter5 {
+		grid-column: 1 / 7;
+	}
+	.chapter2, .chapter4, .chapter6 {
+		grid-column: 7 / 13;
+	}
+	h5.toc__chapter__num {
+		margin: 1.5rem 0 2rem 0 !important;
+	}
+	h3.toc__chapter__title {
+		font-size: 24pt !important;
+		padding: 1rem 4rem .7rem 4rem !important;
+	}
+}
+@media screen and (min-width: 1025px) and (max-width: 1350px) {
+	h5.toc__chapter__num {
+		margin: 1rem 0 1.5rem 0 !important;
+	}
+	h3.toc__chapter__title {
+		font-size: 22pt !important;
+		padding: 1rem 5rem .7rem 5rem !important;
+	}
+}
 @media screen and (min-width: 1500px) and (max-width: 1999px) {}
 @media screen and (min-width: 3000px) and (min-resolution: 192dpi) { /* room 160 */
+	#home__toc {
+		padding: 20rem 20rem !important;
+	}
+	.toc__lead {
+		margin-bottom: 8rem;
+	}
+	.toc__lead h2 {
+		font-size: 12rem !important;
+		margin-bottom: -2rem;
+	}
+	.toc__lead h5 {
+		font-size: 3.2rem !important;
+	}
+	.toc__lead h6 {
+		font-size: 2.8rem !important;
+	}
+	.toc__icon__wrapper {
+		height: 26rem;
+		width: 26rem;
+	}
+	.toc__icon__wrapper:before {
+		top: 14px;
+		right: 14px;
+		bottom: 14px;
+		left: 14px;
+	}
+	.toc__icon__bkg {
+		height: 22.6rem;
+		width: 22.6rem;
+	}
+	.toc__icon__bkg a {
+		height: 23rem;
+		width: 23rem;
+	}
+	.toc__icon__bkg a:hover {
+		border: 2px solid #fff;
+	}
+	.chapter1 img {
+		margin-top: 2rem;
+		width: 25rem;
+	}
+	.chapter2 img {
+		width: 13rem;
+	}
+	.chapter3 img {
+		width: 50rem;
+	}
+	.chapter4 img {
+		width: 18rem;
+	}
+	.chapter5 img {
+		width: 20rem;
+	}
+	.chapter6 img {
+		margin-top: 1.5rem;
+		width: 20rem;
+	}
+	.toc__chapter__num {
+		margin: 2.4rem 0 !important;
+	}
+	.toc__chapter__num a {
+		font-size: 38pt;
+		padding:0 1rem 0rem 1rem !important;
+	}
+	h3.toc__chapter__title {
+		font-size: 38pt !important;
+	}
+	.toc__chapter__date {
+		font-size: 18pt;
+	}
+	.toc__chapter__sections {
+		margin: .5rem 0 12rem 0;
+	}
+	.section__title {
+		font-size: 26pt;
+		margin-top: 4rem;
+	}
+	.section__further-insights {
+		font-size: 18pt;
+		margin-bottom: 3rem;
+	}
+	#home__footer {
+		height: 20rem;
+		margin: 0 -20rem -20rem -20rem;
+	}
+	#home__footer a {
+		font-size: 21pt;
+	}
 }
 
 /*** Footer ***/
