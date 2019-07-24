@@ -522,13 +522,6 @@ h3.toc__chapter__title a:focus {
 		font-size: 18pt;
 		margin-bottom: 3rem;
 	}
-	#home__footer {
-		height: 20rem;
-		margin: 0 -20rem -20rem -20rem;
-	}
-	#home__footer a {
-		font-size: 21pt;
-	}
 }
 
 /*** Footer ***/
@@ -564,6 +557,13 @@ h3.toc__chapter__title a:focus {
 @media screen and (min-width: 1025px) and (max-width: 1350px) {}
 @media screen and (min-width: 1500px) and (max-width: 1999px) {}
 @media screen and (min-width: 3000px) and (min-resolution: 192dpi) { /* room 160 */
+	#home__footer {
+		height: 20rem;
+		margin: 0 -20rem -20rem -20rem;
+	}
+	#home__footer a {
+		font-size: 21pt;
+	}
 }
 /***** End Landing Page / Table of Contents *****/
 
