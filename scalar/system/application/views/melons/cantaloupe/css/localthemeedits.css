@@ -113,7 +113,8 @@ h6.blockquote__attribution {
 /***** End Headings *****/
 
 
-/***** Landing Page / Table of Contents *****/
+/***** Landing Page / Visual Table of Contents *****/
+/*** Video Loop ***/
 #home__bkg {
 	height: auto;
 	min-height: 100%;
@@ -124,6 +125,66 @@ h6.blockquote__attribution {
 	min-width: 100%;
 	width: 100%;
 }
+h1.home__title span {
+	display: block;
+	width: 100%;
+}
+h1.home__title span:nth-of-type(1) {
+	margin-bottom: 1.3rem;
+	transform: translateX(-25.5%);
+}
+h1.home__title span:nth-of-type(2) {
+	transform: translateX(15.5%);
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+	h1.home__title {
+		font-size: 8rem;
+		padding: 0 4rem;
+	}
+	h1.home__title span {
+		text-align: center !important;
+		transform: translateX(0) !important;
+	}
+  	h1.home__title span:nth-of-type(1) {
+  		margin-bottom: 0;
+  	}
+  	h6.home__byline {
+  		font-size: 1.4rem !important;
+  	}
+}
+@media screen and (min-width: 320px) and (max-width: 500px) {
+	h1.home__title {
+		font-size: 6rem;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	h1.home__title {
+		font-size: 10rem;
+	}
+}
+@media screen and (min-width: 1025px) and (max-width: 1350px) {
+	h1.home__title span:nth-of-type(2) {
+		transform: translateX(10%);
+	}
+}
+@media screen and (min-width: 1500px) and (max-width: 1999px) {
+	h1.home__title {
+		font-size: 20rem;
+	}
+	h6.home__byline {
+		font-size: 2.1rem !important;
+	}
+}
+@media screen and (min-width: 3000px) and (min-resolution: 192dpi) { /* room 160 */
+	h1.home__title {
+		font-size: 39rem;
+	}
+	h6.home__byline {
+		font-size: 3.2rem !important;
+	} 
+}
+
+/*** Visual Table of Contents ***/
 #home__toc {
 	background: url("http://206.189.70.30/scalar/italian-shadows-july-2019/media/toc_bkg.png");
 	background-repeat: no-repeat;
@@ -259,7 +320,7 @@ h3.toc__chapter__title {
 	font-size: 30pt !important;
 	line-height: 1.2;
 	margin: 0 !important;
-	padding: 1rem 7rem 1.5rem 7rem !important;
+	padding: 1rem 5.5rem 1.5rem 5.5rem !important;
 	text-align: center;
 	width: 100%;
 }
@@ -290,6 +351,15 @@ h3.toc__chapter__title a:focus {
 .section__title a:focus {
 	outline: 1px dotted #fff;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {}
+@media screen and (min-width: 320px) and (max-width: 500px) {}
+@media screen and (min-width: 768px) and (max-width: 1024px) {}
+@media screen and (min-width: 1025px) and (max-width: 1350px) {}
+@media screen and (min-width: 1500px) and (max-width: 1999px) {}
+@media screen and (min-width: 3000px) and (min-resolution: 192dpi) { /* room 160 */
+}
+
+/*** Footer ***/
 #home__footer {
 	background: #231F20;
 	display: flex;
@@ -315,6 +385,13 @@ h3.toc__chapter__title a:focus {
 }
 #home__footer a:focus {
 	outline: 1px dotted #FCBD7A;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {}
+@media screen and (min-width: 320px) and (max-width: 500px) {}
+@media screen and (min-width: 768px) and (max-width: 1024px) {}
+@media screen and (min-width: 1025px) and (max-width: 1350px) {}
+@media screen and (min-width: 1500px) and (max-width: 1999px) {}
+@media screen and (min-width: 3000px) and (min-resolution: 192dpi) { /* room 160 */
 }
 /***** End Landing Page / Table of Contents *****/
 
