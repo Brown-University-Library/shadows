@@ -113,6 +113,62 @@ h6.blockquote__attribution {
 /***** End Headings *****/
 
 
+/***** Scalar Top Navigation *****/
+.navbar { /* navigation background */
+	background-color: #231f20;
+	border: none;
+}
+.navbar .close, #mobileMenuSubmenus .close {
+	background-color: #231f20;
+}
+/*** Hamburger Menu ***/
+#mainMenuInside {
+	background-color: #231f20;
+}
+#mainMenuInside h2 {
+	font-family: 'adobe-caslon-pro', Georgia, serif !important;
+	font-size: 21pt !important;
+	font-style: normal !important;
+	font-weight: 800 !important;
+	margin-bottom: 1.2rem !important;
+	padding-left: 3.8rem !important;
+}
+#mainMenuSubmenus h2.title {
+	font-family: 'adobe-caslon-pro', Georgia, serif !important;
+	font-size: 16pt !important;
+	font-style: normal !important;
+	font-weight: 600 !important;
+	padding: 0 3.4rem !important;
+}
+#mainMenuSubmenus h2.title span {
+	display: inline-block;
+}
+.tocMenu .expandedPage .description {
+	display: inline-block;
+	padding: 0 3.4rem;
+}
+.tocMenu .expandedPage h2.title {
+	line-height: 1.2;
+	margin: 1.8rem 0 1rem 0;
+}
+.relationships ol {
+	text-align: left;
+}
+
+/*** Visualizations Menu ***/
+#navMenu.dropdown {}
+.relationships ol li a > span {
+	display: inline-block;
+}
+
+/*** Icons ***/
+.menuIcon {/* all navbar icons */}
+.navbar .closeIcon, #mobileMainMenuSubmenus {/* x-close icon */}
+.navbar li > a > #homeIcon {/* hamburger menu home icon */}
+.navbar #wayfindingIcon {/* visualization compass icon */}
+/***** End Scalar Top Navigation *****/
+
+
 /***** Landing Page / Visual Table of Contents *****/
 /*** Video Loop ***/
 #home__bkg {
@@ -123,6 +179,25 @@ h6.blockquote__attribution {
 	right: 0;
 	left: 0;
 	min-width: 100%;
+	width: 100%;
+}
+h1.home__title {
+	color: #fff;
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	font-family: 'GabrielaStencil-Bold';
+	font-size: 17rem;
+	font-weight: normal;
+	height: 100vh;
+	line-height: 1 !important;
+	padding: 5rem 13rem 0 13rem;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	text-align: center;
 	width: 100%;
 }
 h1.home__title span {
@@ -136,9 +211,24 @@ h1.home__title span:nth-of-type(1) {
 h1.home__title span:nth-of-type(2) {
 	transform: translateX(15.5%);
 }
+h6.home__byline {
+	color: #fff;
+	font-size: 2rem !important;
+	letter-spacing: .125em;
+	line-height: 2;
+	margin: 0 !important;
+	padding: 0 !important;
+	position: fixed;
+	right: 0;
+	bottom: 5vh;
+	left: 0;
+	text-align: center;
+	text-transform: uppercase;
+	width: 100%;
+}
 @media screen and (min-width: 320px) and (max-width: 767px) {
 	h1.home__title {
-		font-size: 8rem;
+		font-size: 8.6rem;
 		padding: 0 4rem;
 	}
 	h1.home__title span {
@@ -149,12 +239,15 @@ h1.home__title span:nth-of-type(2) {
   		margin-bottom: 0;
   	}
   	h6.home__byline {
+  		bottom: 10vh;
   		font-size: 1.4rem !important;
   	}
 }
 @media screen and (min-width: 320px) and (max-width: 500px) {
 	h1.home__title {
-		font-size: 6rem;
+		font-size: 6.2rem;
+		margin-top: -2.5rem;
+		padding: 0 2rem;
 	}
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -180,6 +273,7 @@ h1.home__title span:nth-of-type(2) {
 		font-size: 39rem;
 	}
 	h6.home__byline {
+		bottom: 7vh;
 		font-size: 3.2rem !important;
 	} 
 }
@@ -413,8 +507,55 @@ h3.toc__chapter__title a:focus {
 	text-decoration: underline;
 	transition: color .3s;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {}
-@media screen and (min-width: 320px) and (max-width: 500px) {}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+	#home__toc {
+  		padding: 5rem 1.5rem;
+  	}
+  	.toc__lead {
+  		margin-bottom: 5rem;
+  	}
+	.toc__lead h2 {
+		font-size: 6rem !important;
+		line-height: 1 !important;
+		margin-bottom: 2rem !important;
+	}
+	.toc__lead h5 {
+		line-height: 1.5;
+	}
+	.chapter1 {
+		grid-column: 1 / 13;
+		grid-row: 2 / 3;
+	}
+	.chapter2 {
+		grid-column: 1 / 13;
+		grid-row: 3 / 4;
+	}
+	.chapter3 {
+		grid-column: 1 / 13;
+		grid-row: 4 / 5;
+	}
+	.chapter4 {
+		grid-column: 1 / 13;
+		grid-row: 5 / 6;
+	}
+	.chapter5 {
+		grid-column: 1 / 13;
+		grid-row: 6 / 7;
+	}
+	.chapter6 {
+		grid-column: 1 / 13;
+		grid-row: 7 / 8;
+	}
+	h3.toc__chapter__title {
+		font-size: 3.4rem !important;
+		padding: 2rem 4rem .5rem 4rem !important;
+	}
+}
+@media screen and (min-width: 320px) and (max-width: 500px) {
+	h3.toc__chapter__title {
+		padding: 2rem 3rem .5rem 3rem !important;
+	}
+}
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 	.chapter1, .chapter3, .chapter5 {
 		grid-column: 1 / 7;
@@ -621,42 +762,6 @@ div.description {
 /***** End Hero / Header *****/
 
 
-/***** Hamburger Menu *****/
-#mainMenuInside h2 {
-	font-family: 'adobe-caslon-pro', Georgia, serif !important;
-	font-size: 21pt !important;
-	font-style: normal !important;
-	font-weight: 800 !important;
-	margin-bottom: 1.2rem !important;
-	padding-left: 3.8rem !important;
-}
-#mainMenuSubmenus h2.title {
-	font-family: 'adobe-caslon-pro', Georgia, serif !important;
-	font-size: 16pt !important;
-	font-style: normal !important;
-	font-weight: 600 !important;
-	padding: 0 3.4rem !important;
-}
-#mainMenuSubmenus h2.title span {
-	display: inline-block;
-}
-.tocMenu .expandedPage .description {
-	display: inline-block;
-	padding: 0 3.4rem;
-}
-.tocMenu .expandedPage h2.title {
-	line-height: 1.2;
-	margin: 1.8rem 0 1rem 0;
-}
-.relationships ol {
-	text-align: left;
-}
-.relationships ol li a > span {
-	display: inline-block;
-}
-/***** End Hamburger Menu *****/
-
-
 /***** Chapter Navigation *****/
 .chapter-nav {
 	background: #231F20;
@@ -832,6 +937,7 @@ div.media_description.pane {
 	line-height: 160%;
 }
 
+/*** Blockquote ***/
 blockquote {
 	font-family: 'adobe-caslon-pro', Georgia, serif;
 	font-style: oblique;
@@ -843,22 +949,21 @@ blockquote {
 	border-left: none;
 }
 blockquote:not(.pullquote) {
-	border-left: 1px solid #000;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
 	color: #584B4E;
 	font-size: 2.1rem;
 	font-style: normal;
 	line-height: 1.5;
-	margin: 5rem 0 5rem 9rem;
-	padding-left: 1.5rem;
+	margin: 5rem 8rem !important;
+	padding: 3rem 1rem 2rem 1rem;
 }
 blockquote.translated {
-	border-left: none;
-	margin: 5rem 8rem;
-	padding-left: 0;
+	border: none;
+	padding: 0;
 }
-/***** End Body Copy *****/
 
-/***** Translation *****/
+/*** Translation ***/
 .translation-wrapper {
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
@@ -901,7 +1006,8 @@ button.translate:focus {
 	color: #fff;
 	outline: none;
 }
-/***** End Translation *****/
+/***** End Body Copy *****/
+
 
 
 /***** Footnotes *****/
@@ -1010,12 +1116,11 @@ button.caption__button:focus {
 
 
 /***** Carousel Widget *****/
-.carousel-caption {
-	top: 0 !important;
+/*.carousel-caption {
 	right: 0 !important;
 	bottom: 0;
 	left: 0 !important;
-}
+}*/
 /***** End Carousel Widget *****/
 
 
