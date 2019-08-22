@@ -53,6 +53,7 @@ cite {
 	min-height: calc(100% - 4.8rem); */
 	font-size: 135%;
 	line-height: 3.2rem;
+	padding: 0rem;
 /*	position: relative;
 	-webkit-transition: opacity .5s ease-in-out;
 	-moz-transition: opacity .5s ease-in-out;
@@ -712,6 +713,49 @@ h3.toc__chapter__title a:focus {
 }
 #home__footer a:focus {
 	outline: 1px dotted #FCBD7A;
+}
+section.relationships {
+	background-color: #231F20;
+	color: #FCBD7A;
+	margin-top: 10rem;
+	padding: 11.4rem 0 2.4rem 0;
+}
+.relationships p {
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 0;
+	padding: 0;
+	position: absolute;
+	right: 0;
+	width: 48%;
+}
+/* .relationships .nav__title {display: block;} */
+a.nav_btn,
+a.nav_btn.primary {
+	background-color: transparent;
+	color: #FCBD7A;
+	text-align: right;
+}
+a.nav_btn:hover,
+a.nav_btn.primary:hover {
+	background-color: transparent;
+	color: #fff;
+	text-decoration: underline;
+}
+#incoming_comments { /* need to remove the clearfix from this to style properly */
+	display: none;
+}
+#footer {
+	background-color: #231F20;
+	color: #FCBD7A;
+	margin-top: 0;
+	padding: 8rem 7.2rem 7.8rem 7.2rem;
+}
+#footer #colophon {
+	color: #ADADAD;
+}
+#footer a {
+	color: #FCBD7A;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {}
 @media screen and (min-width: 320px) and (max-width: 500px) {}
