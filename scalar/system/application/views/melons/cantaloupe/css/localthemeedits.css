@@ -714,50 +714,7 @@ h3.toc__chapter__title a:focus {
 #home__footer a:focus {
 	outline: 1px dotted #FCBD7A;
 }
-section.relationships {
-	background-color: #231F20;
-	color: #FCBD7A;
-	margin-top: 10rem;
-	padding: 11.4rem 0 2.4rem 0;
-}
-.relationships p {
-	display: flex;
-	justify-content: flex-end;
-	margin-bottom: 0;
-	padding: 0;
-	position: absolute;
-	right: 0;
-	width: 48%;
-}
-/* .relationships .nav__title {display: block;} */
-a.nav_btn,
-a.nav_btn.primary {
-	background-color: transparent;
-	color: #FCBD7A;
-	text-align: right;
-}
-a.nav_btn:hover,
-a.nav_btn.primary:hover {
-	background-color: transparent;
-	color: #fff;
-	text-decoration: underline;
-}
-#incoming_comments { /* need to remove the clearfix from this to style properly */
-	display: none;
-}
-#footer {
-	background-color: #231F20;
-	color: #FCBD7A;
-	margin-top: 0;
-	padding: 8rem 7.2rem 7.8rem 7.2rem;
-}
-#footer #colophon {
-	color: #ADADAD;
-}
-#footer a {
-	color: #FCBD7A;
-}
-@media screen and (min-width: 320px) and (max-width: 767px) {}
+
 @media screen and (min-width: 320px) and (max-width: 500px) {}
 @media screen and (min-width: 768px) and (max-width: 1024px) {}
 @media screen and (min-width: 1025px) and (max-width: 1350px) {}
@@ -901,9 +858,21 @@ a.simulation__title em {
 
 
 /***** Footer Navigation *****/
-.relationships {
+section.relationships {
+	background-color: #231F20;
+	color: #FCBD7A;
 	margin-top: 10rem;
+	padding: 11.4rem 0 2.4rem 0;
 	max-width: 100% !important;
+}
+.relationships p {
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 0;
+	padding: 0;
+	position: absolute;
+	right: 0;
+	width: 48%;
 }
 .relationships h1 {
 	font-size: 28pt;
@@ -913,24 +882,64 @@ a.simulation__title em {
 	padding-left: 7.2rem;
 	text-align: center;
 }
-a.nav_btn, a.nav_btn.primary {
-	background-color: #3B6D44;
-	color: #fff;
+/* .relationships .nav__title {display: block;} */
+a.nav_btn,
+a.nav_btn.primary {
+	background-color: transparent;
+	color: #FCBD7A;
+	text-align: right;
 }
-a.nav_btn:hover, a.nav_btn.primary:hover {
-	background-color: #FCBD7A;
-	color: #231F20;
-	transition: .2s;
+a.nav_btn:hover,
+a.nav_btn.primary:hover {
+	background-color: transparent;
+	color: #fff;
+	text-decoration: underline;
+	transition: color .2s;
+}
+#incoming_comments { /* need to remove the clearfix from this to style properly */
+	display: none;
+}
+#footer {
+	background-color: #231F20;
+	color: #FCBD7A;
+	margin-top: 0;
+	padding: 8rem 7.2rem 7.8rem 7.2rem;
+}
+#footer #colophon {
+	color: #ADADAD;
+}
+#footer a {
+	color: #FCBD7A;
+}
+/* Media Queries */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+	section.relationships {
+		height: 250px;
+		padding: 11.4rem 0 0 0;
+	}
+	.relationships p {
+		font-size: 18px;
+		line-height: 1.5;
+		width: 42%;
+	}
+	#footer {
+		padding: 1.5rem 1.5rem 5rem 1.5rem;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	.relationships p {
+		width: 46%;
+	}
+}
+@media screen and (min-width: 1025px) and (max-width: 1350px) {
+	.relationships p {
+		width: 45%;
+	}
 }
 /***** End Footer Navigation *****/
 
 
 /***** Body Copy *****/
-div.note_viewer {
-	background-color: #fff7ef;
-	line-height: 144%;
-}
-
 a.texteo_icon.texteo_icon_note {
 	font-size: 61% !important;
   	vertical-align: baseline;
@@ -942,26 +951,18 @@ a.texteo_icon.texteo_icon_note {
 a.media_link {
  /* vertical-align: middle !important; */
 }
-
-/* a.noteLink {
-	display: none;
-} */
-
 div.slot {
 	background-color: transparent;
 	background-image: none;
 }
-
 div.widgetContainer.well.page_margins {
 	margin-left: auto !important;
 	margin-right: auto !important;
 	align-content: center !important;
 }
-
 div.slot.full.pillarbox {
 	background-color: #ADADAD !important;
 }
-
 div.media_description.pane.body_copy {
 	font-weight: bold;
 }
@@ -971,7 +972,6 @@ div.media_description.pane.body_copy {
 	background-color: white !important;
 	background-image: none !important;
 }
-
 div.body_copy {
 /*	margin-left: auto !important;
 	margin-right: auto !important;*/
@@ -980,7 +980,6 @@ div.body_copy {
 	text-align: center;
 	max-width:100% !important;
 }
-
 .fake_body_copy {
 	box-sizing: border-box;
 	margin: 0 auto; 
@@ -991,13 +990,11 @@ div.body_copy {
 .fake_body_copy a {
 	color: #3b6d44;
 }
-
 div.slot.left.top {
 	margin-left: auto !important;
 	margin-right: auto !important;
 	padding-left: 33rem !important;
 }
-
 div.media_description.pane {
 	margin-bottom: 40px;
 	line-height: 160%;
@@ -1080,7 +1077,8 @@ button.translate:focus {
 	color: #fff;
 	outline: none;
 }
-/***** End Body Copy *****/
+
+/* Media Queries */
 @media screen and (min-width: 320px) and (max-width: 767px) {
 	article.page > span {
 		display: inline-block;
@@ -1100,15 +1098,19 @@ button.translate:focus {
 		margin: 0 4%;
 	}
 }
-
 @media screen and (min-width: 320px) and (max-width: 767px) and (max-device-height: 1136px) {
 	.wrapped_slot.full_width { /* images with wraparound text */
 		margin: 0 -6vw !important;
 	}
 }
+/***** End Body Copy *****/
 
 
 /***** Footnotes *****/
+div.note_viewer {
+	background-color: #fff7ef;
+	line-height: 144%;
+}
 .note_viewer a {
 	color: #3B6D44;
 	text-decoration: underline;
@@ -1332,6 +1334,12 @@ a.further-insights:hover {
 }
 .further-insights-wrapper {
 	display: flex;
+}
+/* Media Queries */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+	.further-insights__container {
+		bottom: 281px;
+	}
 }
 /***** End Further Insights *****/
 
