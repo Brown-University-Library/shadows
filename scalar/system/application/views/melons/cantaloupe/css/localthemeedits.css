@@ -73,7 +73,6 @@ h1.heading_font {
 	line-height: 135%;
 	padding-top: 7%;
 }
-
 /* use h3 for chapter section headings */
 h3.heading_font {
 	border-top: 1px solid black;
@@ -89,7 +88,6 @@ h3.heading_font {
 	padding-bottom: 30px;
 	padding-left: 0;
 }
-
 /* use h4 for chapter sub-section headings */
 h4.heading_font {
 	font-family: 'adobe-caslon-pro', Georgia, serif !important;
@@ -98,7 +96,6 @@ h4.heading_font {
 	padding-right: 0;
 	padding-left: 0;
 }
-
 /* use h6 for blockquote credit line directly below blockquote text */
 h6.heading_font {
 	font-family: 'adobe-caslon-pro', Georgia, serif !important;
@@ -116,6 +113,7 @@ h6.blockquote__attribution {
 /***** Scalar Top Navigation *****/
 .navbar { /* navigation background */
 	background-color: #231f20;
+	/*background-color: transparent;*/
 	border: none;
 }
 .navbar .close, #mobileMenuSubmenus .close {
@@ -201,6 +199,7 @@ h1.home__title {
 	width: 100%;
 }
 h1.home__title span {
+	cursor: pointer;
 	display: block;
 	width: 100%;
 }
@@ -215,7 +214,7 @@ h6.home__byline {
 	color: #fff;
 	font-size: 2rem !important;
 	letter-spacing: .125em;
-	line-height: 2;
+	line-height: 1.5;
 	margin: 0 !important;
 	padding: 0 !important;
 	position: fixed;
@@ -225,6 +224,23 @@ h6.home__byline {
 	text-align: center;
 	text-transform: uppercase;
 	width: 100%;
+}
+@media screen and (max-width: 319px) {
+	h1.home__title {
+		font-size: 2.8rem;
+		padding: 0 .5rem;
+	}
+	h1.home__title span {
+		text-align: center !important;
+		transform: translateX(0) !important;
+	}
+  	h1.home__title span:nth-of-type(1) {
+  		margin-bottom: 0;
+  	}
+	h6.home__byline {
+		bottom: 10vh;
+		font-size: 1.4rem !important;
+	}
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
 	h1.home__title {
@@ -266,6 +282,11 @@ h6.home__byline {
 	}
 	h6.home__byline {
 		font-size: 2.1rem !important;
+	}
+}
+@media screen and (min-width: 2000px) {
+	h1.home__title {
+		font-size: 28rem;
 	}
 }
 @media screen and (min-width: 3000px) and (min-resolution: 192dpi) { /* room 160 */
@@ -883,7 +904,7 @@ a.media_link {
 } */
 
 div.slot {
-	background-color: white;
+	background-color: transparent;
 	background-image: none;
 }
 
@@ -917,10 +938,11 @@ div.body_copy {
 }
 
 .fake_body_copy {
-	max-width: 85.4rem; 
-	margin: 0 auto !important; 
-	padding: 0 7.2rem !important;
+	box-sizing: border-box;
+	margin: 0 auto; 
+	padding: 0 7.2rem;
 	text-align: left;
+	max-width: 85.4rem; 
 }
 .fake_body_copy a {
 	color: #3b6d44;
@@ -935,6 +957,14 @@ div.slot.left.top {
 div.media_description.pane {
 	margin-bottom: 40px;
 	line-height: 160%;
+}
+
+/*** Image Spread ***/
+.image-container {
+	margin: 0 12% 0 12%;
+}
+.caption__text {
+	max-width: 60%;
 }
 
 /*** Blockquote ***/
@@ -1007,7 +1037,31 @@ button.translate:focus {
 	outline: none;
 }
 /***** End Body Copy *****/
+@media screen and (min-width: 320px) and (max-width: 767px) {
+	article.page > span {
+		display: inline-block;
+	}
+	.fake_body_copy {
+		margin: 0 0 0 -.04vw;
+		padding: 0;
+		max-width: 100%;
+	}
+	.wrapped_slot.full_width { /* images with wraparound text */
+		margin: 0 -6vw !important;
+	}
+	.mediainfo.full_width { /* captions for images with wraparound text */
+		margin: 0 0 !important;
+	}
+	.image-container {
+		margin: 0 4%;
+	}
+}
 
+@media screen and (min-width: 320px) and (max-width: 767px) and (max-device-height: 1136px) {
+	.wrapped_slot.full_width { /* images with wraparound text */
+		margin: 0 -6vw !important;
+	}
+}
 
 
 /***** Footnotes *****/
@@ -1018,6 +1072,10 @@ button.translate:focus {
 .note_viewer a:hover {
 	color: #000;
 	transition: .2s;
+}
+.note_viewer .noteLink,
+.note_viewer br {
+	display: none;
 }
 .note_viewer .fake_body_copy {
 	max-width: 100%;
