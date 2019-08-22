@@ -922,26 +922,33 @@ a#back-btn {
 /* Media Queries */
 @media screen and (min-width: 320px) and (max-width: 767px) {
 	section.relationships {
-		height: 250px;
-		padding: 11.4rem 0 0 0;
+		height: 300px;
+		padding: 18rem 0 0 0;
 	}
 	.relationships p {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 		font-size: 18px;
 		line-height: 1.5;
-/*		width: 42%;*/
+	}
+	a#back-btn, 
+	a.nav_btn, 
+	a.nav_btn.primary {
+		text-align: center;
 	}
 	#footer {
 		padding: 1.5rem 1.5rem 5rem 1.5rem;
 	}
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-	.relationships p {
-/*		width: 46%;*/
+	section.relationships {
+		padding: 18rem 0 0 0;
 	}
 }
 @media screen and (min-width: 1025px) and (max-width: 1350px) {
 	.relationships p {
-/*		width: 45%;*/
+
 	}
 }
 /***** End Footer Navigation *****/
@@ -1346,8 +1353,16 @@ a.further-insights:hover {
 /* Media Queries */
 @media screen and (min-width: 320px) and (max-width: 767px) {
 	.further-insights__container {
-		bottom: 281px;
+		bottom: 331px;
 	}
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	.further-insights__container {
+		bottom: 305px;
+	}
+}
+@media screen and (min-width: 1025px) and (max-width: 1350px) {
+	
 }
 /***** End Further Insights *****/
 
