@@ -85,7 +85,6 @@ scalar/system/application/views/melons/cantaloupe/js/scalarhelp.jquery.js
 scalar/system/application/views/melons/cantaloupe/js/scalarindex.jquery.js
 scalar/system/application/views/melons/cantaloupe/js/scalarmedia.jquery.js
 scalar/system/application/views/melons/cantaloupe/js/scalarmediadetails.jquery.js
-scalar/system/application/views/melons/cantaloupe/js/scalarpage.jquery.js
 scalar/system/application/views/melons/cantaloupe/js/scalarsearch.jquery.js
 scalar/system/application/views/melons/cantaloupe/js/scalarstructuredgallery.jquery.js
 scalar/system/application/views/melons/cantaloupe/js/scalarvisualizations.jquery.js
