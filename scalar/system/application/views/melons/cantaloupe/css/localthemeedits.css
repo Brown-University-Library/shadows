@@ -2,12 +2,20 @@
 /*
 Black: #231f20;
 Black, Pure: #000000;
+Brown: #663d43;
 Gray: #adadad;
+Gray, Dark: #666666;
 Gray, Medium: #584b4e;
+Gray, Light: #e1dadc;
+Gray, Extra Light: #e8ede5;
+Gray, Darker Extra Light: hsla(336, 10%, 70%, .5);
+Gray, Darkest Extra Light: hsla(336, 10%, 25%, .8);
 Green: #3b6d44;
 Green, Light: #d8f0b9;
 White: #ffffff;
 Yellow: #fcbd7a;
+Yellow, Darker: hsla(31, 96%, 65%, .5);
+Yellow, Darkest: hsla(31, 96%, 25%, .8);
 Yellow, Light: #fff7ef;
 */
 /***** End Color Palette *****/
@@ -1276,7 +1284,7 @@ button.caption__button:focus {
 	width: 160px;
 }
 .layer__link {
-	color: #333;
+	color: #663d43;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -1297,7 +1305,7 @@ button.caption__button:focus {
 	text-transform: capitalize;
 }
 .layer1 {
-	background-color: hsla(0, 0%, 87%, 1);
+	background-color: hsla(336, 10%, 90%, 1);
 	transition: background-color 0s;
 	z-index: 3;
 }
@@ -1306,7 +1314,7 @@ button.caption__button:focus {
 	transition: background-color .3s;
 }
 .layer1:hover a.layer__link {
-	color: brown;
+	color: #231f20;
 	text-decoration: none;
 }
 .layer1:hover ~ .layer2 {
@@ -1318,13 +1326,13 @@ button.caption__button:focus {
 	transition: background-color 0s;
 }
 .layer2 {
-	background-color: hsla(0, 0%, 70%, .5);
+	background-color: hsla(336, 10%, 70%, .5);
 	top: 15%;
 	transition: background-color .1s;
 	z-index: 2;
 }
 .layer3 {
-	background-color: hsla(0, 0%, 25%, .8);
+	background-color: hsla(336, 10%, 25%, .8);
 	top: 30%;
 	transition: background-color .2s;
 	z-index: 1;
@@ -1334,7 +1342,7 @@ button.caption__button:focus {
 	align-items: center;
 	justify-content: space-around;
 }
-a.further-insights {
+/* a.further-insights {
 	background-color: #3B6D44;
 	color: #fff;
 	padding: 1.5rem;
@@ -1346,7 +1354,7 @@ a.further-insights:hover {
 	color: #231F20;
 	text-decoration: none;
 	transition: .2s;
-}
+} */
 .further-insights-wrapper {
 	display: flex;
 }
@@ -1362,7 +1370,7 @@ a.further-insights:hover {
 	}
 }
 @media screen and (min-width: 1025px) and (max-width: 1350px) {
-	
+
 }
 /***** End Further Insights *****/
 
