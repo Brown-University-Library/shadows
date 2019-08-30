@@ -845,7 +845,8 @@ h3.toc__chapter__title a:focus {
 	justify-content: center;
 	grid-column: 1 / 13;
 	height: 12rem;
-	margin: 0 -4rem -12rem -4rem;
+	margin: 0;
+	position: relative;
 }
 #home__footer ul {
 	display:flex;
@@ -864,7 +865,11 @@ h3.toc__chapter__title a:focus {
 #home__footer a:focus {
 	outline: 1px dotted #FCBD7A;
 }
-
+@media screen and (min-width: 320px) and (max-width: 767px) {
+	#home__footer {
+		margin: 0 -4rem -16rem -4rem;
+	}
+}
 @media screen and (min-width: 320px) and (max-width: 500px) {}
 @media screen and (min-width: 768px) and (max-width: 1024px) {}
 @media screen and (min-width: 1025px) and (max-width: 1350px) {}
