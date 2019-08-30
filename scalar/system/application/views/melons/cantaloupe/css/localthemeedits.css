@@ -80,6 +80,7 @@ cite {
 /*	margin: 5rem auto 0 auto;
 	padding: 0 0 7.8rem 0;
 	min-height: calc(100% - 4.8rem); */
+	color: #231f20;
 	font-size: 135%;
 	line-height: 3.2rem;
 	padding: 0rem;
@@ -110,8 +111,8 @@ h1.heading_font {
 }
 /* use h3 for chapter section headings */
 h3.heading_font {
-	border-top: 1px solid black;
-	border-bottom: 1px solid black;
+	border-top: 1px solid #231f20;
+	border-bottom: 1px solid #231f20;
 	font-family: GabrielaStencil-Bold !important;
 	font-weight: normal;
 	font-style: normal;
@@ -131,16 +132,12 @@ h4.heading_font {
 	padding-right: 0;
 	padding-left: 0;
 }
-/* use h6 for blockquote credit line directly below blockquote text */
 h6.heading_font {
 	font-family: 'adobe-caslon-pro', Georgia, serif !important;
 	font-weight: normal;
 	font-size: 16.33pt;
 	margin-top: -1.2rem;
 	padding-top: 0;
-}
-h6.blockquote__attribution {
-	margin-bottom: 8rem;
 }
 /***** End Headings *****/
 
@@ -1180,34 +1177,42 @@ div.media_description.pane {
 
 /*** Blockquote ***/
 blockquote {
-	font-family: 'adobe-caslon-pro', Georgia, serif;
-	font-style: oblique;
-	font-weight: normal;
-	padding-left: 0rem;
-	padding-right: 0rem;
-	font-size: 22pt;
-	line-height: 135%;
+	border-top: 1px solid #584B4E;
+	border-bottom: 1px solid #584B4E;
 	border-left: none;
-}
-blockquote:not(.pullquote) {
-	border-top: 1px solid black;
-	border-bottom: 1px solid black;
 	color: #584B4E;
+	font-family: 'adobe-caslon-pro', Georgia, serif;
 	font-size: 2.1rem;
 	font-style: normal;
+	font-weight: normal;
 	line-height: 1.5;
-	margin: 5rem 8rem !important;
-	padding: 3rem 1rem 2rem 1rem;
+	margin: 5rem 8rem;
+	padding: 3rem 1rem 2rem 1rem;	
 }
 blockquote.translated {
 	border: none;
 	padding: 0;
 }
+blockquote.pullquote {
+	border: none;
+	color: #231f20;
+	font-size: 22pt;
+	font-style: oblique;
+	line-height: 135%;
+	margin: 0;
+	padding-left: 0rem;
+	padding-right: 0rem;	
+}
+h6.pullquote__attribution {
+	color: #231f20;
+	margin-bottom: 8rem;
+}
+blockquote:not(.pullquote) {}
 
 /*** Translation ***/
 .translation-wrapper {
-	border-top: 1px solid black;
-	border-bottom: 1px solid black;
+	border-top: 1px solid #231f20;
+	border-bottom: 1px solid #231f20;
 	padding: 3rem 1rem 2rem 1rem;
 }
 button.translate {
@@ -1257,6 +1262,36 @@ button.translate:focus {
 		margin: 0 0 0 -.04vw;
 		padding: 0;
 		max-width: 100%;
+	}
+	blockquote {
+		background: #584b4e;
+		border: none;
+		color: #fff;
+		margin: 3rem -2.5rem;
+		padding: 5rem;
+	}
+	blockquote.translated {
+		background: transparent;
+		color: #231f20;
+		margin: 3rem 0;
+		padding: 0;
+	}
+	blockquote.pullquote {
+		background: transparent;
+		color: #231f20;
+		margin: 0 0 3rem 0;
+		padding: 0;
+	}
+	blockquote a.texteo_icon.texteo_icon_note {
+		color: #fff;
+		text-decoration: underline;
+	}
+	blockquote.translated a.texteo_icon.texteo_icon_note {
+		color: red;
+		text-decoration: none;
+	}
+	h6.pullquote__attribution a.texteo_icon.texteo_icon_note {
+		color: red;
 	}
 	.wrapped_slot.full_width { /* images with wraparound text */
 		margin: 0 -6vw !important;
