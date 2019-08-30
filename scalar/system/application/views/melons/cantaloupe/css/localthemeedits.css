@@ -1,3 +1,24 @@
+/***** INDEX *****/
+/*
+Typography
+Global Styles
+Headings
+Scalar Top Navigation
+Landing Page / Visual Table of Contents
+Section Hero / Header
+Chapter Navigation
+Footer Navigation
+Body Copy
+	Blockquotes
+	Pullquotes
+	Translations
+Footnotes
+Extended Captions
+Simulations
+Further Insights
+*/
+/***** END INDEX *****/
+
 /***** Color Palette *****/
 /*
 Black: #231f20;
@@ -10,8 +31,8 @@ Gray, Light: #e1dadc;
 Gray, Extra Light: #e8ede5;
 Gray, Darker Extra Light: hsla(336, 10%, 70%, .5);
 Gray, Darkest Extra Light: hsla(336, 10%, 25%, .8);
-Green: #3b6d44;
-Green, Light: #d8f0b9;
+X Green: #3b6d44;
+X Green, Light: #d8f0b9;
 White: #ffffff;
 Yellow: #fcbd7a;
 Yellow, Darker: hsla(31, 96%, 65%, .5);
@@ -39,7 +60,7 @@ Yellow, Light: #fff7ef;
 /***** End Typography *****/
 
 
-/***** Global *****/
+/***** Global Styles *****/
 body {
 	font-size: 16px;
 }
@@ -739,7 +760,7 @@ h3.toc__chapter__title a:focus {
 /***** End Landing Page / Table of Contents *****/
 
 
-/***** Hero / Header *****/
+/***** Section Hero / Header *****/
 .caption_font { 
 	font-family: 'adobe-caslon-pro', Georgia, serif !important; 
 	font-size: 106%;
@@ -789,7 +810,7 @@ div.description {
 	text-align: center;
 	padding-top: 1.75em;
 }
-/***** End Hero / Header *****/
+/***** End Section Hero / Header *****/
 
 
 /***** Chapter Navigation *****/
