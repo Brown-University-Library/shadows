@@ -219,7 +219,7 @@ h1.home__title {
 	font-size: 17rem;
 	font-weight: normal;
 	height: 100vh;
-	line-height: 1 !important;
+	line-height: 1;
 	padding: 5rem 13rem 0 13rem;
 	position: fixed;
 	top: 0;
@@ -242,11 +242,11 @@ h1.home__title span:nth-of-type(2) {
 }
 h6.home__byline {
 	color: #fff;
-	font-size: 2rem !important;
+	font-size: 2rem;
 	letter-spacing: .125em;
 	line-height: 1.5;
-	margin: 0 !important;
-	padding: 0 !important;
+	margin: 0;
+	padding: 0;
 	position: fixed;
 	right: 0;
 	bottom: 5vh;
@@ -339,43 +339,69 @@ h6.home__byline {
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: auto;
 	height: auto;
-	min-height: 125vh;
+	min-height: auto;
 	margin: 0;
 	padding: 4rem;
 	position: relative;
-	top: 90vh;
+	top: auto;
 	right: 0;
 	left: 0;
 	width: auto;
 	min-width: 100%;
 }
-#home__toc h2, #home__toc h5, #home__toc h6 {
-	margin: 0 !important;
-	padding: 0 !important;
-}
 .toc__lead {
 	grid-column: 1 / 13;
 	line-height: 1.5;
+	margin-bottom: 5rem;
 	text-align: center;
+}
+.toc__lead h2, 
+.toc__lead h5, 
+.toc__lead h6, 
+.toc__chapter h5 {
+	margin: 0;
+	padding: 0;
 }
 .toc__lead h2 {
 	font-family: 'GabrielaStencil-Bold' !important;
-	font-size: 7rem !important;
-	font-weight: normal !important;
-	line-height: 1.5 !important;
+	font-size: 7rem;
+	font-weight: normal;
+	line-height: 1.5;
+}
+.toc__lead h3.toc__chapter__title {
+	margin: 5rem 0 3rem 0;
+	position: relative;
+	z-index: 1;
+}
+.toc__lead h3.toc__chapter__title::before, 
+.toc__lead h3.toc__chapter__title::after {
+	border-top: 1px solid #dfdfdf;
+	content: ' ';
+	margin: 0 auto;
+	position: absolute;
+	top: 45%;
+	bottom: 0;
+	width: 12%;
+	z-index: -1;
+}
+.toc__lead h3.toc__chapter__title::before {
+	left: 31%;
+}
+.toc__lead h3.toc__chapter__title::after {
+	right: 31%;
 }
 .toc__lead h5 {
 	font-family: 'adobe-caslon-pro', Georgia, serif !important;
-	font-weight: 400 !important;
+	font-weight: 400;
 	letter-spacing: .05em;
 	line-height: 2;
-	margin-bottom: 2rem !important;
+	margin-bottom: 2rem;
 	text-transform: uppercase;
 }
 .toc__lead h6 {
-	font-size: 1.5rem !important;
-	line-height: 2 !important;
-	margin-bottom: 6rem !important;
+	font-size: 1.5rem;
+	line-height: 2;
+	margin-bottom: 6rem;
 }
 .toc__chapter {
 	display: flex;
@@ -560,15 +586,28 @@ h3.toc__chapter__title a:focus {
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
 	#home__toc {
+		-webkit-overflow-scrolling: touch !important;
   		padding: 5rem 1.5rem;
+  		top: auto !important;
   	}
   	.toc__lead {
   		margin-bottom: 5rem;
   	}
 	.toc__lead h2 {
-		font-size: 6rem !important;
-		line-height: 1 !important;
-		margin-bottom: 2rem !important;
+		font-size: 6rem;
+		line-height: 1;
+		margin-bottom: 2rem;
+	}
+	.toc__lead h3.toc__chapter__title::before, 
+	.toc__lead h3.toc__chapter__title::after {
+		top: 55%;
+		width: 20%;
+	}
+	.toc__lead h3.toc__chapter__title::before {
+		left: 5%;
+	}
+	.toc__lead h3.toc__chapter__title::after {
+		right: 5%;
 	}
 	.toc__lead h5 {
 		line-height: 1.5;
@@ -602,16 +641,39 @@ h3.toc__chapter__title a:focus {
 		padding: 2rem 4rem .5rem 4rem !important;
 	}
 }
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+	.toc__lead h3.toc__chapter__title::before {
+		left: 15%;
+	}
+	.toc__lead h3.toc__chapter__title::after {
+		right: 15%;
+	}
+}
 @media screen and (min-width: 320px) and (max-width: 500px) {
 	h3.toc__chapter__title {
 		padding: 2rem 3rem .5rem 3rem !important;
 	}
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-	.chapter1, .chapter3, .chapter5 {
+	.toc__lead h3.toc__chapter__title::before, 
+	.toc__lead h3.toc__chapter__title::after {
+		top: 50%;
+		width: 22%;
+	}
+	.toc__lead h3.toc__chapter__title::before {
+		left: 17%;
+	}
+	.toc__lead h3.toc__chapter__title::after {
+		right: 17%;
+	}
+	.chapter1, 
+	.chapter3, 
+	.chapter5 {
 		grid-column: 1 / 7;
 	}
-	.chapter2, .chapter4, .chapter6 {
+	.chapter2, 
+	.chapter4, 
+	.chapter6 {
 		grid-column: 7 / 13;
 	}
 	h5.toc__chapter__num {
@@ -623,6 +685,10 @@ h3.toc__chapter__title a:focus {
 	}
 }
 @media screen and (min-width: 1025px) and (max-width: 1350px) {
+	.toc__lead h3.toc__chapter__title::before, 
+	.toc__lead h3.toc__chapter__title::after {
+		top: 50%;
+	}
 	h5.toc__chapter__num {
 		margin: 1rem 0 1.5rem 0 !important;
 	}
@@ -640,14 +706,14 @@ h3.toc__chapter__title a:focus {
 		margin-bottom: 8rem;
 	}
 	.toc__lead h2 {
-		font-size: 12rem !important;
+		font-size: 12rem;
 		margin-bottom: -2rem;
 	}
 	.toc__lead h5 {
-		font-size: 3.2rem !important;
+		font-size: 3.2rem;
 	}
 	.toc__lead h6 {
-		font-size: 2.8rem !important;
+		font-size: 2.8rem;
 	}
 	.toc__icon__wrapper {
 		height: 26rem;
