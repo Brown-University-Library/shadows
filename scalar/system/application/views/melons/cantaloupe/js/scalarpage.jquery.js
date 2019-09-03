@@ -856,6 +856,7 @@
 
                                 var continueVerbage;
                                 var backVerbage; // CB
+                                var articleContent = $('article.page > span');
                                 if (pathOptionCount == 0) {
                                     continueVerbage = "Continue to ";
                                     backVerbage = "Go back to "; // CB
@@ -866,14 +867,36 @@
 
                                 // continue button
                                 links = $('<p></p>');
-                                var continue_button = $('<a class="continue_btn nav_btn" href="' + page.containingPathNodes[page.containingPathIndex + 1].url +
-                                    '?path=' + page.containingPath.slug + '">' + continueVerbage + '&ldquo;' + page.containingPathNodes[page.containingPathIndex + 1].getDisplayTitle() +
-                                    '&rdquo;</a>').appendTo(links);
-                                if (pathOptionCount == 0) {
-                                    continue_button.addClass('primary');
-                                }
-                          		var nextNodeOnPath = page.containingPathNodes[page.containingPathIndex + 1];
-                          		page.addPathButton('right', nextNodeOnPath, page.containingPath);
+                                // var continue_button = $('<a class="continue_btn nav_btn" href="' + page.containingPathNodes[page.containingPathIndex + 1].url +
+                                //     '?path=' + page.containingPath.slug + '">' + continueVerbage + '&ldquo;' + page.containingPathNodes[page.containingPathIndex + 1].getDisplayTitle() +
+                                //     '&rdquo;</a>').appendTo(links);
+                                // if (pathOptionCount == 0) {
+                                //     continue_button.addClass('primary');
+                                // }
+                                // var nextNodeOnPath = page.containingPathNodes[page.containingPathIndex + 1];
+                                // page.addPathButton('right', nextNodeOnPath, page.containingPath);
+                                setTimeout(function() { // CB
+                                    if ( $(articleContent).hasClass('pre-fi') ) {
+                                        var continue_button = $('<a class="continue_btn nav_btn" href="' + page.containingPathNodes[page.containingPathIndex + 2].url +
+                                            '?path=' + page.containingPath.slug + '">' + continueVerbage + '&ldquo;' + page.containingPathNodes[page.containingPathIndex + 2].getDisplayTitle() +
+                                            '&rdquo;</a>').appendTo(links);
+                                        if (pathOptionCount == 0) {
+                                            continue_button.addClass('primary');
+                                        }
+                                        var nextNodeOnPath = page.containingPathNodes[page.containingPathIndex + 2];
+                                        page.addPathButton('right', nextNodeOnPath, page.containingPath);
+                                    }
+                                    else {
+                                        var continue_button = $('<a class="continue_btn nav_btn" href="' + page.containingPathNodes[page.containingPathIndex + 1].url +
+                                            '?path=' + page.containingPath.slug + '">' + continueVerbage + '&ldquo;' + page.containingPathNodes[page.containingPathIndex + 1].getDisplayTitle() +
+                                            '&rdquo;</a>').appendTo(links);
+                                        if (pathOptionCount == 0) {
+                                            continue_button.addClass('primary');
+                                        }
+                                        var nextNodeOnPath = page.containingPathNodes[page.containingPathIndex + 1];
+                                        page.addPathButton('right', nextNodeOnPath, page.containingPath);
+                                    }
+                                }, 1000);
  
                                 // back button
                                 // if (page.containingPathIndex > 0) {
