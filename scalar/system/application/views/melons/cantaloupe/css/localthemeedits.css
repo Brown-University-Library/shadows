@@ -24,6 +24,8 @@ Further Insights
 Black: #231f20;
 Black, Pure: #000000;
 Brown: #663d43;
+Brown, Bright: #A85A0C;
+Brown, Brighter: #b35f0c;
 Gray: #adadad;
 Gray, Dark: #666666;
 Gray, Medium: #584b4e;
@@ -545,7 +547,7 @@ h6.home__byline {
 	width: 8rem;
 }
 .chapter3 img {
-	width: 30rem;
+	width: 13rem;
 }
 .chapter4 img {
 	width: 11rem;
@@ -914,6 +916,10 @@ div.media_description.pane {
 	font-size: 3rem;
 	margin-bottom:-2rem;
 }
+.title_card .chapter__section, 
+.title_card .chapter__section-divider {
+	display: none;
+}
 .title_card .description {
 	padding-left: 0;
 }
@@ -1207,6 +1213,13 @@ h6.pullquote__attribution {
 	color: #231f20;
 	margin-bottom: 8rem;
 }
+blockquote a.texteo_icon.texteo_icon_note {
+	text-decoration: underline;
+}
+blockquote a.texteo_icon.texteo_icon_note:hover {
+	/*color: #b35f0c;*/
+	color: red;
+}
 blockquote:not(.pullquote) {}
 
 /*** Translation ***/
@@ -1284,14 +1297,13 @@ button.translate:focus {
 	}
 	blockquote a.texteo_icon.texteo_icon_note {
 		color: #fff;
-		text-decoration: underline;
 	}
 	blockquote.translated a.texteo_icon.texteo_icon_note {
-		color: red;
+		color: #A85A0C;
 		text-decoration: none;
 	}
 	h6.pullquote__attribution a.texteo_icon.texteo_icon_note {
-		color: red;
+		color: #A85A0C;
 	}
 	.wrapped_slot.full_width { /* images with wraparound text */
 		margin: 0 -6vw !important;
@@ -1334,14 +1346,14 @@ div.note_viewer {
 }
 a.texteo_icon.texteo_icon_note {
 	background-image: none !important;
-	color: #3B6D44;
+	color: #A85A0C;
 	font-family: 'adobe-caslon-pro', Georgia, serif !important;
 	font-size: 70% !important;
 	font-style: normal !important;
 	font-weight: 800 !important;
 	padding-left: 0;
 }
-a.footnote--scroll {
+/*a.footnote--scroll {
 	color: #3B6D44;
 	cursor: pointer;
 	font-family: 'adobe-caslon-pro', Georgia, serif !important;
@@ -1351,7 +1363,7 @@ a.footnote--scroll {
 	position: relative;
 	top: -0.4em;
 	vertical-align: baseline;
-}
+}*/
 .footnotes {
 	text-align: left;
 }
