@@ -904,9 +904,18 @@
                                 // }
                                 // CB back button
                                 if (page.containingPathIndex > 0) {
-                                    var back_button = $('<a id="back-btn" class="nav_btn" href="' + page.containingPathNodes[page.containingPathIndex - 1].url + 
-                                    '?path=' + page.containingPath.slug + '">' + backVerbage + '&ldquo;' + page.containingPathNodes[page.containingPathIndex - 1].getDisplayTitle() + 
-                                    '&rdquo;</a>').prependTo(links);
+                                    setTimeout(function() { // CB
+                                        if ( $(articleContent).hasClass('post-fi') ) {
+                                            var back_button = $('<a id="back-btn" class="nav_btn" href="' + page.containingPathNodes[page.containingPathIndex - 2].url + 
+                                            '?path=' + page.containingPath.slug + '">' + backVerbage + '&ldquo;' + page.containingPathNodes[page.containingPathIndex - 2].getDisplayTitle() + 
+                                            '&rdquo;</a>').prependTo(links);                                            
+                                        }
+                                        else {
+                                            var back_button = $('<a id="back-btn" class="nav_btn" href="' + page.containingPathNodes[page.containingPathIndex - 1].url + 
+                                            '?path=' + page.containingPath.slug + '">' + backVerbage + '&ldquo;' + page.containingPathNodes[page.containingPathIndex - 1].getDisplayTitle() + 
+                                            '&rdquo;</a>').prependTo(links);
+                                        }
+                                    }, 1000);
                                 }
 
                                 section.append(links);
@@ -914,8 +923,18 @@
                             pathOptionCount++;
                             containingPathOptionCount++;
 
+                        // } else if (page.containingPathIndex == (page.containingPathNodes.length - 1)) {
+                        //     section.append('<p><a id="back-btn" class="nav_btn" href="' + page.containingPathNodes[page.containingPathIndex - 1].url + '?path=' + page.containingPath.slug + '">&laquo; Back to &ldquo;' + page.containingPathNodes[page.containingPathIndex - 1].getDisplayTitle() + '&rdquo;</a></p>');
+                        // }
+                        // CB Last Back Button in a Chapter
                         } else if (page.containingPathIndex == (page.containingPathNodes.length - 1)) {
-                            section.append('<p><a id="back-btn" class="nav_btn" href="' + page.containingPathNodes[page.containingPathIndex - 1].url + '?path=' + page.containingPath.slug + '">&laquo; Back to &ldquo;' + page.containingPathNodes[page.containingPathIndex - 1].getDisplayTitle() + '&rdquo;</a></p>');
+                            if (page.containingPath.slug == 'chapter-1') {
+                                myNum = 2;
+                                section.append('<p><a id="back-btn" class="nav_btn" href="' + page.containingPathNodes[page.containingPathIndex - myNum].url + '?path=' + page.containingPath.slug + '">&laquo; Back to &ldquo;' + page.containingPathNodes[page.containingPathIndex - myNum].getDisplayTitle() + '&rdquo;</a></p>');
+                            }
+                            else {
+                                section.append('<p><a id="back-btn" class="nav_btn" href="' + page.containingPathNodes[page.containingPathIndex - myNum].url + '?path=' + page.containingPath.slug + '">&laquo; Back to &ldquo;' + page.containingPathNodes[page.containingPathIndex - myNum].getDisplayTitle() + '&rdquo;</a></p>');                       
+                            }
                         }
                         if (page.containingPathIndex > 0) {
                         	var prevNodeOnPath = page.containingPathNodes[page.containingPathIndex - 1];
